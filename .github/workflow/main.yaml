@@ -29,7 +29,7 @@ jobs:
         ECR_REPOSITORY: clo835_rohan_repository_mysql
         IMAGE_TAG: v1.0
       run: |
-
+       cd Assignment2/
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .
@@ -42,7 +42,7 @@ jobs:
         ECR_REPOSITORY: clo835_rohan_repository_webapp
         IMAGE_TAG: v1.0
       run: |
-        
+        cd Assignment2/
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
