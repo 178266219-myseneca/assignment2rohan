@@ -9,6 +9,7 @@ RUN set -xe \
 RUN pip install --upgrade pip
 RUN pip3 install flask
 RUN pip install -r requirements.txt
+ENV DBPORT=3306
 EXPOSE 8080
-ENTRYPOINT ["python3"]
-CMD ["app.py"]
+ENTRYPOINT [ "python3" ]
+CMD [ "app.py" ]
