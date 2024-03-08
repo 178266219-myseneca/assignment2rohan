@@ -8,7 +8,7 @@ RUN set -xe \
     && apt-get install -y mysql-client
 RUN pip install --upgrade pip
 RUN pip3 install flask
-RUN pip install -r requirements.txt
+RUN pip install -r /Assignment2/requirements.txt
 ENV DBPORT=3306
 EXPOSE 8080
 ENTRYPOINT [ "python3" ]
